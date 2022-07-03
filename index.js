@@ -249,7 +249,7 @@ buttonEl.addEventListener('click', () => {
     init()
     animate()
     spawnEnemies()
-    document.location.reload(true)
+    canvas.clearRect()
     gsap.to('#modalEl', {
         opacity: 0,
         scale: 0.8,
