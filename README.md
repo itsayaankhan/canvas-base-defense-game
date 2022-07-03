@@ -1,5 +1,5 @@
 # canvas-base-defense-game<br>
-The rights to this game go to Chris Courses.
+The rights to this game go to @Chris Courses.
 
 I was simply using his course for learning purposes, as well as modifying and tweaking a parts of the code.
 
