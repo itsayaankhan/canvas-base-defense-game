@@ -117,7 +117,7 @@ let animationId
 let intervalId
 let score = 0
 
-function init() {
+function {
     player = new Player(x, y, 10, 'white')
     projectiles = []
     enemies = []
@@ -249,7 +249,6 @@ buttonEl.addEventListener('click', () => {
     init()
     animate()
     spawnEnemies()
-    canvas.clearRect()
     gsap.to('#modalEl', {
         opacity: 0,
         scale: 0.8,
