@@ -1,7 +1,7 @@
 # canvas-base-defense-game<br>
 The rights to this game go to @Chris Courses.
 
-I was simply using his course for learning purposes, as well as modifying and tweaking a parts of the code.
+I was simply using his course and code for learning purposes, as well as modifying and tweaking a parts of the code.
 
 You can check out his other courses and material on his website: https://chriscourses.com/ <br>
 (by the way, his resources on HTML 5 canvas, JS, CSS, and game development are amazing and would recommend for any begineer, intermediate, and advanced programmers)
