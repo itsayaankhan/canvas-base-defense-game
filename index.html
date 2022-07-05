@@ -1,39 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>canvas-game</title>
-</head>
-<body>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            background-color: black;
-        }
-    </style>
-    <div style="position: absolute; color: white; padding: 8px; font-size: 14px; user-select: none;">
-        <span>Score: <span id="scoreEl">0</span></span>
-    </div>
-    <!-- Game over and Restart Button -->
-    <div id="modalEl" style="position: absolute; background-color: white; top: 50%; transform: translate(-50%, -50%); left: 50%; padding: 16px; max-width: 500px; width: 100%; text-align: center; border-radius: 5px; display: none;">
-        <label style="font-size: 14px; color: gray;">Game Over</label>
-        <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom: 0; margin-top: 8px;">0</h1>
-        <p style="margin: 0; font-size: 14px; color: grey;">Points</p>
-        <button id="buttonEl" style="margin-top: 12px; background-color: blue; border: none; color: white; padding: 8px 16px; border-radius: 5px; cursor: pointer; ">Restart Game</button>
-    </div>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no"
+/>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
+<style>
+  body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+  }
+</style>
 
-     <!-- Start game  -->
-    <div id="startModalEl" style="position: absolute; background-color: white; top: 50%; transform: translate(-50%, -50%); left: 50%; padding: 16px; max-width: 500px; width: 100%; text-align: center; border-radius: 5px;">
-        <h1 id="modalScoreEl" style="font-size: 24px; margin-bottom: 0; margin-top: 8px;">Base Defense Game</h1>
-        <button id="startButtonEl" style="margin-top: 12px; background-color: blue; border: none; color: white; padding: 8px 16px; border-radius: 5px; cursor: pointer; ">Start</button>
+<div class="fixed text-white text-sm ml-2 mt-1 select-none">
+  <span>Score: </span><span id="scoreEl">0</span>
+</div>
+
+<div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+  <div id="whiteModalEl" class="bg-white max-w-md w-full p-6 text-center">
+    <h1 class="text-4xl font-bold leading-none" id="bigScoreEl">0</h1>
+    <p class="text-sm text-gray-700 mb-4">Points</p>
+    <div>
+      <button
+        class="bg-blue-500 text-white w-full py-3 rounded-full text-sm"
+        id="startGameBtn"
+      >
+        Start Game
+      </button>
     </div>
+  </div>
+</div>
 
-    <canvas></canvas>
+<canvas></canvas>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./index.js"></script>
-</body>
-</html>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"
+></script>
+<script src="./index.js"></script>
